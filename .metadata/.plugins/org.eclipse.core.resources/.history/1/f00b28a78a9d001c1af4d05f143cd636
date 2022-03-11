@@ -1,0 +1,15 @@
+
+public class CalculadorImposto implements Tributavel {
+
+	private double imposto;
+
+	public double getImposto() {
+		return imposto;
+	}
+
+	public void setImposto(double imposto) {
+		this.imposto = imposto;
+	}
+	
+	
+}

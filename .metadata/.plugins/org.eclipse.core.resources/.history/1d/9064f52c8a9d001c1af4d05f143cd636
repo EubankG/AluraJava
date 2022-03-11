@@ -1,0 +1,13 @@
+
+public class interface Tributavel {
+	
+	@Override
+	public double getImposto() {
+		return imposto;
+	}
+
+	public void setImposto(double imposto) {
+		this.imposto = imposto;
+	}
+	
+}

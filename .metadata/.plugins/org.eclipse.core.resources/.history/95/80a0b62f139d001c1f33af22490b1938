@@ -1,0 +1,29 @@
+
+public class Client implements Autenticavel {
+
+	private AutenticacaoUtil util; 
+	
+	
+	public Client() {
+		this.util = new AutenticacaoUtil();
+	}
+	@Override
+	
+	public void setSenha(int senha) {
+		// TODO Auto-generated method stub
+		this.senha = senha;
+	}
+
+	@Override
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			return true; 
+		} else {
+			return false;			
+		}
+	}
+	
+	
+
+
+}

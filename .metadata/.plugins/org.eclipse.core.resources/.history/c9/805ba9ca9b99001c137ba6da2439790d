@@ -1,0 +1,27 @@
+//Gerente herda da class funcionario.
+
+public class Gerente extends Funcionario{
+	private int senha;
+
+	public boolean autenticacao(int senha) {
+		if(this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+	public double getBonificacao() {
+		//super significa que o atributo salario vem da classe mãe = Funcionario. 
+		return super.getBonificacao() + super.getSalario(); 
+	}
+
+	public double getBonifcacaoD() { 
+		return (super.getSalario() * 0.2) + super.getSalario(); 
+	}
+	
+}

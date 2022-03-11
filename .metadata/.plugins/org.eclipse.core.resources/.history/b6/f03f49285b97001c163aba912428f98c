@@ -1,0 +1,13 @@
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		Funcionario fun = new Funcionario();
+		
+		fun.setSalario(1200);
+		
+		System.out.println(fun.getBonificacao()); 
+
+	}
+
+}

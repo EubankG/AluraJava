@@ -1,0 +1,18 @@
+import java.util.Set;
+
+public class TesteSistema {
+	public static void main(String[] args) {
+		Gerente g = new Gerente();
+		SistemaInterno si = new SistemaInterno();
+		Administradores adm = new Administradores();
+		
+		g.setColocar(0);
+		g.setSenha(2222);
+		
+		adm.setSenha(22222);
+		
+		
+		si.autentica(g);
+		si.autentica(adm);
+	}
+}

@@ -1,0 +1,10 @@
+package jUnit;
+// Junit Nome da classe + Test
+public class CalculadoraTest {
+	
+	public void deveriaSomarDoisNumerosPosivos() {
+		Calculadora calc = new Calculadora();
+		int soma = calc.somar(2, 4);
+	}
+
+}

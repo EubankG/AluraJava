@@ -1,0 +1,15 @@
+
+public class TesteSistema {
+	public static void main(String[] args) {
+		Gerente g = new Gerente();
+		SistemaInterno si = new SistemaInterno();
+		Administradores adm = new Administradores();
+		g.setSenha(2222);
+		
+		adm.setSenha(22222);
+		
+		
+		si.autentica(g);
+		si.autentica(adm);
+	}
+}

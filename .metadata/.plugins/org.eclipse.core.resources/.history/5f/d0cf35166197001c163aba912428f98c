@@ -1,0 +1,11 @@
+
+public class TesteFuncionarioTeste {
+	public static void main(String[] args) {
+		FuncionarioTeste func = new FuncionarioTeste();
+			
+		func.setTipo(2);
+		func.setSalario(1200);
+		
+		System.out.println(func.getBonificacao());
+	}
+}

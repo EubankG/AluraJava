@@ -1,0 +1,14 @@
+//Gerente herda da class funcionario.
+
+public class Gerente extends funcionario{
+
+	public double getBonificacao() {
+		//super significa que o atributo salario vem da classe mãe = Funcionario. 
+		return super.getSalario(); 
+	}
+
+	public double getBonifcacaoD() { 
+		return (super.getSalario() * 0.2) + super.getSalario(); 
+	}
+	
+}
